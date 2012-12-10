@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         MainWindow.cpp \
-    LoginDialog.cpp
+    LoginDialog.cpp \
+    Authenticator.cpp
 
 HEADERS  += MainWindow.h \
-    LoginDialog.h
+    LoginDialog.h \
+    Authenticator.h
 
 FORMS    += MainWindow.ui \
     LoginDialog.ui
