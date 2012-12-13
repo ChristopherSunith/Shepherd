@@ -63,6 +63,7 @@
     <addaction name="menuNew"/>
     <addaction name="actionSave"/>
     <addaction name="actionSave_All"/>
+    <addaction name="actionExit"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -103,6 +104,11 @@
   <action name="actionSave_All">
    <property name="text">
     <string>Save All</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
    </property>
   </action>
  </widget>
