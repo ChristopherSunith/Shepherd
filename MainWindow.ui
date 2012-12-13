@@ -61,6 +61,8 @@
      <addaction name="actionUser_2"/>
     </widget>
     <addaction name="menuNew"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_All"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -91,6 +93,16 @@
   <action name="actionUser_2">
    <property name="text">
     <string>User</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_All">
+   <property name="text">
+    <string>Save All</string>
    </property>
   </action>
  </widget>

@@ -16,6 +16,7 @@ public:
     ~LoginDialog();
 
     void validateLogin();
+    void clearContent();
     
 private slots:
     void on_clearPushButton_clicked();

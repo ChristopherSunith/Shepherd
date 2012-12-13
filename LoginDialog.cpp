@@ -19,8 +19,7 @@ LoginDialog::~LoginDialog()
 
 void LoginDialog::on_clearPushButton_clicked()
 {
-    ui->userNameLineEdit->setText("");
-    ui->passwordLineEdit->setText("");
+    clearContent();
 }
 
 void LoginDialog::on_loginPushButton_clicked()
@@ -30,6 +29,12 @@ void LoginDialog::on_loginPushButton_clicked()
     validateLogin();
 }
 
+void LoginDialog::clearContent()
+{
+    ui->userNameLineEdit->setText("");
+    ui->passwordLineEdit->setText("");
+}
+
 void LoginDialog::validateLogin()
 {
     if(ui->userNameLineEdit->text() == "alwindoss" && ui->passwordLineEdit->text() == "OpenSesame")
@@ -37,5 +42,8 @@ void LoginDialog::validateLogin()
         std::cout << "Login successful\n";
         this->setVisible(false);
         mainWindow->showMaximized();
+    } else {
+        clearContent();
+        ui->loginNotificationLabel->setText("User Name or Password mismatch");
     }
 }
