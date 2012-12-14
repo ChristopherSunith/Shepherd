@@ -56,9 +56,9 @@
      <property name="title">
       <string>New</string>
      </property>
+     <addaction name="actionTask"/>
      <addaction name="actionProject"/>
-     <addaction name="actionProject_2"/>
-     <addaction name="actionUser_2"/>
+     <addaction name="actionUser"/>
     </widget>
     <addaction name="menuNew"/>
     <addaction name="actionSave"/>
@@ -76,24 +76,14 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionProject">
+  <action name="actionTask">
    <property name="text">
     <string>Task</string>
    </property>
   </action>
-  <action name="actionUser">
-   <property name="text">
-    <string>User</string>
-   </property>
-  </action>
-  <action name="actionProject_2">
+  <action name="actionProject">
    <property name="text">
     <string>Project</string>
-   </property>
-  </action>
-  <action name="actionUser_2">
-   <property name="text">
-    <string>User</string>
    </property>
   </action>
   <action name="actionSave">
@@ -109,6 +99,14 @@
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionUser">
+   <property name="text">
+    <string>User</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+U</string>
    </property>
   </action>
  </widget>
