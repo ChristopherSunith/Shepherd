@@ -24,3 +24,8 @@ void MainWindow::on_actionUser_triggered()
     AddUserDialog *addUser = new AddUserDialog();
     addUser->show();
 }
+
+void MainWindow::on_actionExit_triggered()
+{
+    this->close();
+}

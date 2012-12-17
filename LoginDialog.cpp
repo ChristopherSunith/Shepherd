@@ -33,6 +33,7 @@ void LoginDialog::clearContent()
 {
     ui->userNameLineEdit->setText("");
     ui->passwordLineEdit->setText("");
+    ui->userNameLineEdit->setFocus();
 }
 
 void LoginDialog::validateLogin()

@@ -48,9 +48,12 @@
      <height>25</height>
     </rect>
    </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>File</string>
+     <string>&amp;File</string>
     </property>
     <widget class="QMenu" name="menuNew">
      <property name="title">
@@ -78,17 +81,26 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionTask">
    <property name="text">
-    <string>Task</string>
+    <string>&amp;Task</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Shift+T</string>
    </property>
   </action>
   <action name="actionProject">
    <property name="text">
-    <string>Project</string>
+    <string>&amp;Project</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Shift+P</string>
    </property>
   </action>
   <action name="actionSave">
    <property name="text">
     <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
   <action name="actionSave_All">
@@ -100,13 +112,16 @@
    <property name="text">
     <string>Exit</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
   </action>
   <action name="actionUser">
    <property name="text">
-    <string>User</string>
+    <string>&amp;User</string>
    </property>
    <property name="shortcut">
-    <string>Alt+U</string>
+    <string>Alt+Shift+U</string>
    </property>
   </action>
  </widget>
